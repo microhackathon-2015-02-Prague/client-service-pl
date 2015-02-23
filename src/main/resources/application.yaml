@@ -1,4 +1,3 @@
-
 spring:
   jackson.deserialization.fail-on-unknown-properties: false
   groovy.template.check-template-location: false
@@ -20,3 +19,7 @@ stubrunner.stubs:
 
 server:
   port: 8058
+
+
+stubrunner.use-microservice-definitions: true
+stubrunner.skip-local-repo: true

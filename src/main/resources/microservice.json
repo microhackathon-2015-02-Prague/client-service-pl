@@ -1,6 +1,6 @@
 {
     "pl": {
-        "this": "com/ofg/twitter-places-analyzer",
+        "this": "com/ofg/client-service",
         "dependencies": {
             "collerator": {
                 "path": "com/ofg/twitter-places-collerator"
