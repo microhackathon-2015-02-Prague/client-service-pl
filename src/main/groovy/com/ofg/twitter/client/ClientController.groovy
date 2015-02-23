@@ -1,6 +1,7 @@
 package com.ofg.twitter.client
 
-import com.ofg.twitter.client.json.Client
+import com.ofg.twitter.client.entities.Client
+import com.ofg.twitter.client.json.ClientBean
 import com.ofg.twitter.client.service.ClientService
 import com.wordnik.swagger.annotations.Api
 import com.wordnik.swagger.annotations.ApiOperation
@@ -32,8 +33,9 @@ class ClientController {
     @ApiOperation(value = "Store clint",
             notes = "The client store")
     @ResponseBody
-    Client storeClient(@RequestBody Client client) {
-        clientService.storeClient(client)
+    String storeClient(@RequestBody ClientBean clientBean) {
+        Client client = clientService.storeClient(clientBean)
+        "{   \"id\": ${client.id}  }"
     }
 
 }

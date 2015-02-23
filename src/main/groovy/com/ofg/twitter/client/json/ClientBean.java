@@ -1,6 +1,6 @@
 package com.ofg.twitter.client.json;
 
-public class Client {
+public class ClientBean {
 
     private String name;
     private String surname;
